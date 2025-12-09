@@ -60,10 +60,13 @@
 .chatUi-user-chat-icon {
   width: 42px;
   height: 42px;
-  background-color: gold;
+  background-color: white;
   border-radius: 100px;
 }
 
+.chatUi-ai-chat-icon {
+  background-color: yellow;
+}
 .chatUi-cloudBox-ai,
 .chatUi-cloudBox-user {
   display: flex;
@@ -87,11 +90,13 @@
   line-height: 130%;
   letter-spacing: 0%;
 
-  background-color: aqua;
+  background-color: #1e150d;
 
   padding: 18px 36px 18px 21px;
   border-radius: 20px;
   position: relative; /* important for tail */
+
+  color: #ffffff;
 }
 .chatUi-ai-chat-text {
   /* max-width: 529px; */
@@ -109,7 +114,7 @@
   bottom: 0px; /* adjust vertical position */
   width: 23px;
   height: 23px;
-  background-color: aqua;
+  background-color: #1e150d;
   border-radius: 100px;
 }
 .chatUi-cloud-dot {
@@ -118,6 +123,12 @@
   background-color: lightseagreen;
 
   border-radius: 100px;
+}
+.chatUi-cloud-dot-ai {
+  background-color: #1e150d;
+}
+.chatUi-cloud-dot-user {
+  background-color: #c2924e;
 }
 .chatUi-user-chat-text {
   max-width: 580px;
@@ -129,17 +140,19 @@
   line-height: 130%;
   letter-spacing: 0%;
 
-  background-color: darkblue;
+  background-color: #c2924e;
 
   border-radius: 20px;
   position: relative;
+
+  color: #1e150d;
 }
 .chatUi-user-chat-text::after {
   content: "";
   position: absolute;
   width: 23px;
   height: 23px;
-  background-color: darkblue;
+  background-color: #c2924e;
 
   right: -8px;
   bottom: 0px;
