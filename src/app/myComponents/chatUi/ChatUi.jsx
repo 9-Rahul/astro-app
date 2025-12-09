@@ -12,11 +12,11 @@ export default function chatUi() {
       <div className="chatUi-chat-box">
         <div className="chatUi-ai-chat-box">
           <div className="">
-            <div className="chatUi-ai-chat-icon"></div>
+            <div className="chatUi-ai-chat-icon "></div>
           </div>
           <div className="chatUi-cloudBox-ai">
             <div className="">
-              <div className="chatUi-cloud-dot"></div>
+              <div className="chatUi-cloud-dot chatUi-cloud-dot-ai"></div>
             </div>
             <div className="chatUi-ai-chat-text1">
               Welcome to AI studio! How can I help you today?
@@ -30,11 +30,11 @@ export default function chatUi() {
               falling from the sky. Does that mean anything astrologically?
             </div>
             <div className="">
-              <div className="chatUi-cloud-dot"></div>
+              <div className="chatUi-cloud-dot chatUi-cloud-dot-user"></div>
             </div>
           </div>
           <div className="">
-            <div className="chatUi-ai-chat-icon"></div>
+            <div className="chatUi-user-chat-icon"></div>
           </div>
         </div>
         <div className="chatUi-ai-chat-box">
@@ -43,7 +43,7 @@ export default function chatUi() {
           </div>
           <div className="chatUi-cloudBox-ai">
             <div className="">
-              <div className="chatUi-cloud-dot"></div>
+              <div className="chatUi-cloud-dot chatUi-cloud-dot-ai"></div>
             </div>
             <div className="chatUi-ai-chat-text">
               What a beautiful dream! Gardens often symbolize growth, and stars
@@ -60,11 +60,11 @@ export default function chatUi() {
               be a sign?
             </div>
             <div className="">
-              <div className="chatUi-cloud-dot"></div>
+              <div className="chatUi-cloud-dot chatUi-cloud-dot-user"></div>
             </div>
           </div>
           <div className="">
-            <div className="chatUi-ai-chat-icon"></div>
+            <div className="chatUi-user-chat-icon"></div>
           </div>
         </div>
         <div className="chatUi-ai-chat-box">
@@ -73,7 +73,7 @@ export default function chatUi() {
           </div>
           <div className="chatUi-cloudBox-ai">
             <div className="">
-              <div className="chatUi-cloud-dot"></div>
+              <div className="chatUi-cloud-dot chatUi-cloud-dot-ai"></div>
             </div>
             <div className="chatUi-ai-chat-text">
               Absolutely! Check your transits—Venus may be activating your 5th
@@ -89,11 +89,11 @@ export default function chatUi() {
               What else can you tell me?
             </div>
             <div className="">
-              <div className="chatUi-cloud-dot"></div>
+              <div className="chatUi-cloud-dot chatUi-cloud-dot-user"></div>
             </div>
           </div>
           <div className="">
-            <div className="chatUi-ai-chat-icon"></div>
+            <div className="chatUi-user-chat-icon"></div>
           </div>
         </div>
         <div className="chatUi-ai-chat-box">
@@ -102,7 +102,7 @@ export default function chatUi() {
           </div>
           <div className="chatUi-cloudBox-ai">
             <div className="">
-              <div className="chatUi-cloud-dot"></div>
+              <div className="chatUi-cloud-dot chatUi-cloud-dot-ai"></div>
             </div>
             <div className="chatUi-ai-chat-text">
               A lot of things, have a look...
