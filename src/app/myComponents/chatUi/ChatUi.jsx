@@ -54,6 +54,12 @@ export default function chatUi() {
           </div>
           <div className="chatUi-user-chat-icon"></div>
         </div>
+        <div className="chatUi-ai-chat-box">
+          <div className="chatUi-ai-chat-icon"></div>
+          <div className="chatUi-ai-chat-text">
+            A lot of things, have a look...
+          </div>
+        </div>
       </div>
     </div>
   );
