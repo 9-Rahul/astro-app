@@ -11,53 +11,102 @@ export default function chatUi() {
       {/* Chat */}
       <div className="chatUi-chat-box">
         <div className="chatUi-ai-chat-box">
-          <div className="chatUi-ai-chat-icon"></div>
-          <div className="chatUi-ai-chat-text1">
-            Welcome to AI studio! How can I help you today?
+          <div className="">
+            <div className="chatUi-ai-chat-icon"></div>
+          </div>
+          <div className="chatUi-cloudBox-ai">
+            <div className="">
+              <div className="chatUi-cloud-dot"></div>
+            </div>
+            <div className="chatUi-ai-chat-text1">
+              Welcome to AI studio! How can I help you today?
+            </div>
           </div>
         </div>
         <div className="chatUi-user-chat-box">
-          <div className="chatUi-user-chat-text">
-            I had a dream about walking through a garden with glowing stars
-            falling from the sky. Does that mean anything astrologically?
+          <div className="chatUi-cloudBox-user">
+            <div className="chatUi-user-chat-text">
+              I had a dream about walking through a garden with glowing stars
+              falling from the sky. Does that mean anything astrologically?
+            </div>
+            <div className="">
+              <div className="chatUi-cloud-dot"></div>
+            </div>
           </div>
-          <div className="chatUi-user-chat-icon"></div>
+          <div className="">
+            <div className="chatUi-ai-chat-icon"></div>
+          </div>
         </div>
         <div className="chatUi-ai-chat-box">
-          <div className="chatUi-ai-chat-icon"></div>
-          <div className="chatUi-ai-chat-text">
-            What a beautiful dream! Gardens often symbolize growth, and stars
-            represent guidance or inspiration. Astrologically, this could be
-            your subconscious connecting with your natal Venus or Jupiter,
-            planets that influence abundance and creativity.
+          <div className="">
+            <div className="chatUi-ai-chat-icon"></div>
+          </div>
+          <div className="chatUi-cloudBox-ai">
+            <div className="">
+              <div className="chatUi-cloud-dot"></div>
+            </div>
+            <div className="chatUi-ai-chat-text">
+              What a beautiful dream! Gardens often symbolize growth, and stars
+              represent guidance or inspiration. Astrologically, this could be
+              your subconscious connecting with your natal Venus or Jupiter,
+              planets that influence abundance and creativity.
+            </div>
           </div>
         </div>
         <div className="chatUi-user-chat-box">
-          <div className="chatUi-user-chat-text">
-            I’ve been thinking about starting a creative project. Could this be
-            a sign?
+          <div className="chatUi-cloudBox-user">
+            <div className="chatUi-user-chat-text">
+              I’ve been thinking about starting a creative project. Could this
+              be a sign?
+            </div>
+            <div className="">
+              <div className="chatUi-cloud-dot"></div>
+            </div>
           </div>
-          <div className="chatUi-user-chat-icon"></div>
+          <div className="">
+            <div className="chatUi-ai-chat-icon"></div>
+          </div>
         </div>
         <div className="chatUi-ai-chat-box">
-          <div className="chatUi-ai-chat-icon"></div>
-          <div className="chatUi-ai-chat-text">
-            Absolutely! Check your transits—Venus may be activating your 5th
-            house of creativity, or Jupiter could be encouraging expansion. The
-            dream aligns perfectly with this energy, suggesting you should move
-            forward with your project while the inspiration is fresh.
+          <div className="">
+            <div className="chatUi-ai-chat-icon"></div>
+          </div>
+          <div className="chatUi-cloudBox-ai">
+            <div className="">
+              <div className="chatUi-cloud-dot"></div>
+            </div>
+            <div className="chatUi-ai-chat-text">
+              Absolutely! Check your transits—Venus may be activating your 5th
+              house of creativity, or Jupiter could be encouraging expansion.
+              The dream aligns perfectly with this energy, suggesting you should
+              move forward with your project while the inspiration is fresh.
+            </div>
           </div>
         </div>
         <div className="chatUi-user-chat-box">
-          <div className="chatUi-user-chat-text">
-            What else can you tell me?
+          <div className="chatUi-cloudBox-user">
+            <div className="chatUi-user-chat-text">
+              What else can you tell me?
+            </div>
+            <div className="">
+              <div className="chatUi-cloud-dot"></div>
+            </div>
           </div>
-          <div className="chatUi-user-chat-icon"></div>
+          <div className="">
+            <div className="chatUi-ai-chat-icon"></div>
+          </div>
         </div>
         <div className="chatUi-ai-chat-box">
-          <div className="chatUi-ai-chat-icon"></div>
-          <div className="chatUi-ai-chat-text">
-            A lot of things, have a look...
+          <div className="">
+            <div className="chatUi-ai-chat-icon"></div>
+          </div>
+          <div className="chatUi-cloudBox-ai">
+            <div className="">
+              <div className="chatUi-cloud-dot"></div>
+            </div>
+            <div className="chatUi-ai-chat-text">
+              A lot of things, have a look...
+            </div>
           </div>
         </div>
       </div>
