@@ -1,6 +1,6 @@
 .chatUi {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   background-color: rebeccapurple;
 
   padding-top: 52px;
@@ -63,6 +63,21 @@
   background-color: gold;
   border-radius: 100px;
 }
+
+.chatUi-cloudBox-ai,
+.chatUi-cloudBox-user {
+  display: flex;
+  flex-direction: row;
+
+  align-items: end;
+
+  gap: 9px;
+
+  background-color: pink;
+}
+.chatUi-cloudBox-user {
+  justify-content: end;
+}
 .chatUi-ai-chat-text1,
 .chatUi-ai-chat-text {
   max-width: 384px;
@@ -74,8 +89,9 @@
 
   background-color: aqua;
 
-  padding: 19px 36px 19px 21px;
+  padding: 18px 36px 18px 21px;
   border-radius: 20px;
+  position: relative; /* important for tail */
 }
 .chatUi-ai-chat-text {
   /* max-width: 529px; */
@@ -83,10 +99,30 @@
 
   padding: 16px 13px 16px 21px;
 }
+
+/* TAIL */
+.chatUi-ai-chat-text1::after,
+.chatUi-ai-chat-text::after {
+  content: "";
+  position: absolute;
+  left: -8px; /* move outside the box */
+  bottom: 0px; /* adjust vertical position */
+  width: 23px;
+  height: 23px;
+  background-color: aqua;
+  border-radius: 100px;
+}
+.chatUi-cloud-dot {
+  width: 10px;
+  height: 10px;
+  background-color: lightseagreen;
+
+  border-radius: 100px;
+}
 .chatUi-user-chat-text {
   max-width: 580px;
   min-width: 580px;
-  padding: 17px 35px 27px 24px;
+  padding: 18px 35px 18px 24px;
 
   font-size: 20px;
   font-weight: 500;
@@ -96,6 +132,19 @@
   background-color: darkblue;
 
   border-radius: 20px;
+  position: relative;
+}
+.chatUi-user-chat-text::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: darkblue;
+
+  right: -8px;
+  bottom: 0px;
+
+  border-radius: 100px;
 }
 @media screen and (max-width: 1200px) {
   .chatUi-chat-box {
@@ -109,11 +158,6 @@
     padding-left: 10%;
     padding-right: 100px;
   }
-  /* .chatUi-ai-chat-text1,
-  .chatUi-ai-chat-text,
-  .chatUi-user-chat-text {
-    font-size: 18px;
-  } */
 }
 
 @media screen and (max-width: 1000px) {
@@ -158,6 +202,25 @@
     font-size: 18px;
     padding: 14px 16px 14px 16px;
   }
+  .chatUi-ai-chat-text1::after,
+  .chatUi-ai-chat-text::after,
+  .chatUi-user-chat-text::after {
+    width: 18px;
+    height: 18px;
+    left: -6;
+  }
+  .chatUi-user-chat-text::after {
+    left: auto;
+    right: -6 !important;
+  }
+  .chatUi-cloud-dot {
+    width: 8px;
+    height: 8px;
+  }
+  .chatUi-cloudBox-ai,
+  .chatUi-cloudBox-user {
+    gap: 7px;
+  }
   .chatUi-chat-box {
     gap: 35px;
   }
@@ -167,7 +230,7 @@
   .chatUi-ai-chat-text,
   .chatUi-user-chat-text {
     gap: 15px;
-    max-width: 65%;
+    max-width: 75%;
     min-width: auto;
     /* font-size: 16px; */
   }
@@ -184,6 +247,25 @@
     font-size: 16px;
     padding: 10px 14px 10px 14px;
     /* max-width: 75%; */
+  }
+  .chatUi-ai-chat-text1::after,
+  .chatUi-ai-chat-text::after,
+  .chatUi-user-chat-text::after {
+    width: 14px;
+    height: 14px;
+    left: -5;
+  }
+  .chatUi-user-chat-text::after {
+    left: auto;
+    right: -5 !important;
+  }
+  .chatUi-cloud-dot {
+    width: 6px;
+    height: 6px;
+  }
+  .chatUi-cloudBox-ai,
+  .chatUi-cloudBox-user {
+    gap: 6px;
   }
   .chatUi-chat-box {
     gap: 30px;
@@ -205,7 +287,7 @@
   .chatUi-ai-chat-text1,
   .chatUi-ai-chat-text,
   .chatUi-user-chat-text {
-    max-width: 80%;
+    max-width: 100%;
   }
   .chatUi-user-chat-icon,
   .chatUi-ai-chat-icon {
@@ -216,9 +298,29 @@
   .chatUi-user-chat-box {
     gap: 10px;
   }
+  .chatUi-ai-chat-text1,
+  .chatUi-ai-chat-text,
+  .chatUi-user-chat-text {
+    border-radius: 10px;
+  }
+  .chatUi-ai-chat-text1::after,
+  .chatUi-ai-chat-text::after,
+  .chatUi-user-chat-text::after {
+    width: 12px;
+    height: 12px;
+    left: -5;
+  }
+  .chatUi-user-chat-text::after {
+    left: auto;
+    right: -5 !important;
+  }
+  .chatUi-cloudBox-ai,
+  .chatUi-cloudBox-user {
+    gap: 6px;
+  }
 }
 
-/* title */
+/* responsive  title */
 @media (max-width: 1000px) {
   .chatUi-title {
     font-size: 48px;
